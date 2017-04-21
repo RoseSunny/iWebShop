@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>test</h1>
+<p>
+  Test duration: 7.930s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">weixin.Get_Token_Test</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.194s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40002.0, 参数secret=758dd7de422ce5565148aa47f25a489, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:15] 开始执行get请求<br />
+                                [2017-04-17 11:50:15] 组装url<br />
+                                [2017-04-17 11:50:15] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489<br />
+                                [2017-04-17 11:50:15] jsonObject{"errcode":40002,"errmsg":"invalid grant_type hint: [bn7A90020e575]"}<br />
+                                [2017-04-17 11:50:15] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.210s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40002.0, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:15] 开始执行get请求<br />
+                                [2017-04-17 11:50:15] 组装url<br />
+                                [2017-04-17 11:50:15] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:16] jsonObject{"errcode":40002,"errmsg":"invalid grant_type hint: [iqnQHa0020e544]"}<br />
+                                [2017-04-17 11:50:16] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.022s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40125.0, 参数secret=758dd7de422ce5565148aa47f25a489%, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:12] 开始执行get请求<br />
+                                [2017-04-17 11:50:12] 组装url<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Malformed escape pair at index 132: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx04ee7951e094124c&amp;secret=758dd7de422ce5565148aa47f25a489%</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              java.net.URI.create(URI.java:852)<br />
+              org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)<br />
+              InterfaceFramework.weixin.RequestUtils.doGet(RequestUtils.java:139)<br />
+              InterfaceFramework.weixin.RequestUtils.get(RequestUtils.java:130)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:34)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">java.net.URISyntaxException: Malformed escape pair at index 132: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx04ee7951e094124c&amp;secret=758dd7de422ce5565148aa47f25a489%</a><br />
+        <div class="stackTrace" id="exception-3">
+                      java.net.URI$Parser.fail(URI.java:2848)<br />
+                      java.net.URI$Parser.scanEscape(URI.java:2978)<br />
+                      java.net.URI$Parser.scan(URI.java:3001)<br />
+                      java.net.URI$Parser.checkChars(URI.java:3019)<br />
+                      java.net.URI$Parser.parseHierarchical(URI.java:3111)<br />
+                      java.net.URI$Parser.parse(URI.java:3053)<br />
+                      java.net.URI.&lt;init&gt;(URI.java:588)<br />
+                      java.net.URI.create(URI.java:850)<br />
+                      org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)<br />
+                      InterfaceFramework.weixin.RequestUtils.doGet(RequestUtils.java:139)<br />
+                      InterfaceFramework.weixin.RequestUtils.get(RequestUtils.java:130)<br />
+                      weixin.Get_Token_Test.gettoken(Get_Token_Test.java:34)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:497)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+                      org.testng.TestNG.run(TestNG.java:1031)<br />
+                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:497)<br />
+                      com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.185s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40125.0, 参数secret=758dd7de422ce5565148aa47f25a489a嘎嘣, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:17] 开始执行get请求<br />
+                                [2017-04-17 11:50:17] 组装url<br />
+                                [2017-04-17 11:50:17] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489a嘎嘣<br />
+                                [2017-04-17 11:50:17] jsonObject{"errcode":40125,"errmsg":"invalid appsecret, view more at http:\/\/t.cn\/RAEkdVq hint: [8CwwcA0022e575]"}<br />
+                                [2017-04-17 11:50:17] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.004s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40002.0, 参数secret=758dd7de422ce5565148aa47f25a489%, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:15] 开始执行get请求<br />
+                                [2017-04-17 11:50:15] 组装url<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Malformed escape pair at index 131: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&amp;appid=wx04ee7951e094124c&amp;secret=758dd7de422ce5565148aa47f25a489%</b></a><br />
+    <div class="stackTrace" id="exception-5">
+              java.net.URI.create(URI.java:852)<br />
+              org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)<br />
+              InterfaceFramework.weixin.RequestUtils.doGet(RequestUtils.java:139)<br />
+              InterfaceFramework.weixin.RequestUtils.get(RequestUtils.java:130)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:34)<br />
+              sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse">java.net.URISyntaxException: Malformed escape pair at index 131: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&amp;appid=wx04ee7951e094124c&amp;secret=758dd7de422ce5565148aa47f25a489%</a><br />
+        <div class="stackTrace" id="exception-6">
+                      java.net.URI$Parser.fail(URI.java:2848)<br />
+                      java.net.URI$Parser.scanEscape(URI.java:2978)<br />
+                      java.net.URI$Parser.scan(URI.java:3001)<br />
+                      java.net.URI$Parser.checkChars(URI.java:3019)<br />
+                      java.net.URI$Parser.parseHierarchical(URI.java:3111)<br />
+                      java.net.URI$Parser.parse(URI.java:3053)<br />
+                      java.net.URI.&lt;init&gt;(URI.java:588)<br />
+                      java.net.URI.create(URI.java:850)<br />
+                      org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)<br />
+                      InterfaceFramework.weixin.RequestUtils.doGet(RequestUtils.java:139)<br />
+                      InterfaceFramework.weixin.RequestUtils.get(RequestUtils.java:130)<br />
+                      weixin.Get_Token_Test.gettoken(Get_Token_Test.java:34)<br />
+                      sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:497)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+                      org.testng.TestNG.run(TestNG.java:1031)<br />
+                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:497)<br />
+                      com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.216s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=null, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40002.0, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:16] 开始执行get请求<br />
+                                [2017-04-17 11:50:16] 组装url<br />
+                                [2017-04-17 11:50:16] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=null&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:16] jsonObject{"errcode":40002,"errmsg":"invalid grant_type hint: [xgQdqA0021e544]"}<br />
+                                [2017-04-17 11:50:16] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-7">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.240s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40125.0, 参数secret=758dd7de422ce5565148aa47f25a489, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:12] 开始执行get请求<br />
+                                [2017-04-17 11:50:12] 组装url<br />
+                                [2017-04-17 11:50:12] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489<br />
+                                [2017-04-17 11:50:12] jsonObject{"errcode":40125,"errmsg":"invalid appsecret, view more at http:\/\/t.cn\/RAEkdVq hint: [MMFjEA0017e514]"}<br />
+                                [2017-04-17 11:50:12] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-8">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.210s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40002.0, 参数secret=null, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:15] 开始执行get请求<br />
+                                [2017-04-17 11:50:15] 组装url<br />
+                                [2017-04-17 11:50:15] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124c&secret=null<br />
+                                [2017-04-17 11:50:15] jsonObject{"errcode":40002,"errmsg":"invalid grant_type hint: [y2bJNa0020e514]"}<br />
+                                [2017-04-17 11:50:15] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-9">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.004s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40125.0, 参数secret=758dd7de422ce5565148aa47f25a489%, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:15] 开始执行get请求<br />
+                                [2017-04-17 11:50:15] 组装url<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-10', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Malformed escape pair at index 132: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx04ee7951e094124c&amp;secret=758dd7de422ce5565148aa47f25a489%</b></a><br />
+    <div class="stackTrace" id="exception-10">
+              java.net.URI.create(URI.java:852)<br />
+              org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)<br />
+              InterfaceFramework.weixin.RequestUtils.doGet(RequestUtils.java:139)<br />
+              InterfaceFramework.weixin.RequestUtils.get(RequestUtils.java:130)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:34)<br />
+              sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-11', 'block')" title="Click to expand/collapse">java.net.URISyntaxException: Malformed escape pair at index 132: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=wx04ee7951e094124c&amp;secret=758dd7de422ce5565148aa47f25a489%</a><br />
+        <div class="stackTrace" id="exception-11">
+                      java.net.URI$Parser.fail(URI.java:2848)<br />
+                      java.net.URI$Parser.scanEscape(URI.java:2978)<br />
+                      java.net.URI$Parser.scan(URI.java:3001)<br />
+                      java.net.URI$Parser.checkChars(URI.java:3019)<br />
+                      java.net.URI$Parser.parseHierarchical(URI.java:3111)<br />
+                      java.net.URI$Parser.parse(URI.java:3053)<br />
+                      java.net.URI.&lt;init&gt;(URI.java:588)<br />
+                      java.net.URI.create(URI.java:850)<br />
+                      org.apache.http.client.methods.HttpGet.&lt;init&gt;(HttpGet.java:69)<br />
+                      InterfaceFramework.weixin.RequestUtils.doGet(RequestUtils.java:139)<br />
+                      InterfaceFramework.weixin.RequestUtils.get(RequestUtils.java:130)<br />
+                      weixin.Get_Token_Test.gettoken(Get_Token_Test.java:34)<br />
+                      sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:497)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+                      org.testng.TestRunner.run(TestRunner.java:617)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+                      org.testng.TestNG.run(TestNG.java:1031)<br />
+                      org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+                      org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:497)<br />
+                      com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    1.066s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40002.0, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:12] 开始执行get请求<br />
+                                [2017-04-17 11:50:12] 组装url<br />
+                                [2017-04-17 11:50:12] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:13] jsonObject{"errcode":40002,"errmsg":"invalid grant_type hint: [Ll1wCA0018e544]"}<br />
+                                [2017-04-17 11:50:13] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-12', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-12">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.200s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40125.0, 参数secret=758dd7de422ce5565148aa47f25a489a1, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:12] 开始执行get请求<br />
+                                [2017-04-17 11:50:12] 组装url<br />
+                                [2017-04-17 11:50:12] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489a1<br />
+                                [2017-04-17 11:50:12] jsonObject{"errcode":40125,"errmsg":"invalid appsecret, view more at http:\/\/t.cn\/RAEkdVq hint: [88GqRa0016e544]"}<br />
+                                [2017-04-17 11:50:12] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-13', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-13">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.191s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=40002.0, 参数secret=758dd7de422ce5565148aa47f25a489a1, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:15] 开始执行get请求<br />
+                                [2017-04-17 11:50:15] 组装url<br />
+                                [2017-04-17 11:50:15] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489a1<br />
+                                [2017-04-17 11:50:15] jsonObject{"errcode":40002,"errmsg":"invalid grant_type hint: [YxpaJa0020e514]"}<br />
+                                [2017-04-17 11:50:15] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-14', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-14">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.185s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=41004.0, 参数secret=null, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:11] 开始执行get请求<br />
+                                [2017-04-17 11:50:11] 组装url<br />
+                                [2017-04-17 11:50:11] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124c&secret=null<br />
+                                [2017-04-17 11:50:11] jsonObject{"errcode":40125,"errmsg":"invalid appsecret, view more at http:\/\/t.cn\/RAEkdVq hint: [Gp0m4a0016e575]"}<br />
+                                [2017-04-17 11:50:11] 测试通过<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-15', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-15">
+              Utils.DataUtils.JsonParse(DataUtils.java:30)<br />
+              Utils.DataUtils.JsonParse(DataUtils.java:36)<br />
+              weixin.Get_Token_Test.gettoken(Get_Token_Test.java:39)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br />
+              org.testng.TestNG.run(TestNG.java:1031)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:497)<br />
+              com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">weixin.Get_Token_Test</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.940s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=null, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:13] 开始执行get请求<br />
+                                [2017-04-17 11:50:13] 组装url<br />
+                                [2017-04-17 11:50:13] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=null&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:14] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:14] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.226s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e09412啦, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:16] 开始执行get请求<br />
+                                [2017-04-17 11:50:16] 组装url<br />
+                                [2017-04-17 11:50:16] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e09412啦&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:16] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:16] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.222s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:16] 开始执行get请求<br />
+                                [2017-04-17 11:50:16] 组装url<br />
+                                [2017-04-17 11:50:16] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:16] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:16] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    1.568s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124c, 请求方式=get, 预期结果=7200.0, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.expairs_in, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=access_token}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:09] 开始执行get请求<br />
+                                [2017-04-17 11:50:09] 组装url<br />
+                                [2017-04-17 11:50:10] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124c&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:10] jsonObject{"access_token":"TBK7-Pw7furTAcn6tW82RD1gkesuKuFIXN1pfqOX1A4Pr1PWdljnmiPbxaeC__NTq4CDqvC47AKWI-fOr6uSjqh3KcNqWysyZBFQxCt9MB3qGXVvTlgdBsaWS8-3HUbXRDQjAFAFRE","expires_in":7200}<br />
+                                [2017-04-17 11:50:10] 测试通过<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.224s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=null, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:10] 开始执行get请求<br />
+                                [2017-04-17 11:50:10] 组装url<br />
+                                [2017-04-17 11:50:10] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=null&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:11] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:11] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.189s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094120000000000000000000, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:16] 开始执行get请求<br />
+                                [2017-04-17 11:50:16] 组装url<br />
+                                [2017-04-17 11:50:16] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094120000000000000000000&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:17] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:17] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.200s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:11] 开始执行get请求<br />
+                                [2017-04-17 11:50:11] 组装url<br />
+                                [2017-04-17 11:50:11] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:11] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:11] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.357s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124c1, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:14] 开始执行get请求<br />
+                                [2017-04-17 11:50:14] 组装url<br />
+                                [2017-04-17 11:50:14] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124c1&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:14] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:14] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.196s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124c89, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a48, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:16] 开始执行get请求<br />
+                                [2017-04-17 11:50:16] 组装url<br />
+                                [2017-04-17 11:50:16] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124c89&secret=758dd7de422ce5565148aa47f25a48<br />
+                                [2017-04-17 11:50:16] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:16] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.207s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124&, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:15] 开始执行get请求<br />
+                                [2017-04-17 11:50:15] 组装url<br />
+                                [2017-04-17 11:50:15] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124&&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:15] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:15] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.209s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credentia, 参数appid=wx04ee7951e094124, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:14] 开始执行get请求<br />
+                                [2017-04-17 11:50:14] 组装url<br />
+                                [2017-04-17 11:50:14] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credentia&appid=wx04ee7951e094124&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:15] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:15] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.189s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124&, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:11] 开始执行get请求<br />
+                                [2017-04-17 11:50:11] 组装url<br />
+                                [2017-04-17 11:50:11] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124&&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:11] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:11] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  gettoken
+      </td>
+  <td class="duration">
+    0.276s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">{接口名称=获取access token, 参数grant_type=client_credential, 参数appid=wx04ee7951e094124c1, 请求方式=get, 预期结果=null, 参数secret=758dd7de422ce5565148aa47f25a489a, 实际结果=$.errcode, 接口地址=https://api.weixin.qq.com/cgi-bin/token, 断言=errcode}</span><br />
+    
+            <div class="testOutput">
+                        [2017-04-17 11:50:11] 开始执行get请求<br />
+                                [2017-04-17 11:50:11] 组装url<br />
+                                [2017-04-17 11:50:11] 现在的uri:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx04ee7951e094124c1&secret=758dd7de422ce5565148aa47f25a489a<br />
+                                [2017-04-17 11:50:11] jsonObject<br />
+                                <span style="color:#FF0000"><b>[2017-04-17 11:50:11] [ERROR] appid错误</b></span><br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

@@ -1,0 +1,1056 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Automation Log</title>
+<meta charset="utf-8"><style type="text/css">
+<!--
+body, table {font-family: '微软雅黑',arial,sans-serif; font-size: 12px;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th width="13%">执行时间</th>
+<th width="8%">级别</th>
+<th width="15%">所在行</th>
+<th>信息</th>
+</tr>
+<br></br>
+
+<tr>
+<td title="执行时间">2017-04-20 15:37:06</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">开始执行get请求</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:37:06</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">组装url</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:37:06</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">http://192.168.1.167/iwebshop/index.php?controller=systemadmin&amp;action=login_act&amp;admin_name=admin&amp;password=123456.0&amp;captcha=captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:37:06</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">现在的uri:http://192.168.1.167/iwebshop/index.php?controller=systemadmin&amp;action=login_act&amp;admin_name=admin&amp;password=123456.0&amp;captcha=captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:37:07</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">jsonObject&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;管理后台登录&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/iwebshop/views/sysdefault/skin/green/css/admin.css&quot; /&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/iwebshop/views/sysdefault/javascript/common.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/jquery/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/artDialog.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/plugins/iframeTools.js&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/iwebshop/runtime/_systemjs/artdialog/skins/aero.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body id=&quot;login&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;logo&quot;&gt;
+				&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/iwebshop/views/sysdefault/skin/green/images/admin/logo.png&quot; width=&quot;303&quot; height=&quot;43&quot; /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;wrapper&quot; class=&quot;clearfix&quot;&gt;
+			&lt;div class=&quot;login_box&quot;&gt;
+				&lt;div class=&quot;login_title&quot;&gt;后台管理登录&lt;/div&gt;
+				&lt;div class=&quot;login_cont&quot;&gt;
+					&lt;form action='/iwebshop/index.php?controller=systemadmin&amp;action=login_act' method='post'&gt;
+						&lt;table class=&quot;form_table&quot;&gt;
+							&lt;col width=&quot;90px&quot; /&gt;
+							&lt;col /&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;用户名：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;text&quot; name=&quot;admin_name&quot; alt=&quot;请填写用户名&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;密码：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;password&quot; name=&quot;password&quot; alt=&quot;请填写密码&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;验证码：&lt;/th&gt;&lt;td&gt;&lt;input style=&quot;width:85px&quot; type='text' class='normal' name='captcha' pattern='^\w{5,10}$' alt='填写下面图片所示的字符' /&gt;&lt;label&gt;填写下图所示字符&lt;/label&gt;&lt;/td&gt;
+						  	&lt;/tr&gt;
+							&lt;tr class=&quot;low&quot;&gt;
+								&lt;th&gt;&lt;/th&gt;
+								&lt;td&gt;&lt;img src='/iwebshop/index.php?controller=simple&amp;action=getCaptcha' id='captchaImg' /&gt;&lt;span class=&quot;light_gray&quot;&gt;看不清？&lt;a class=&quot;link&quot; href=&quot;javascript:changeCaptcha();&quot;&gt;换一张&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;登录&quot; /&gt;&lt;input class=&quot;submit&quot; type=&quot;reset&quot; value=&quot;取消&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/table&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;footer&quot;&gt;Power by &lt;a href=&quot;http://www.aircheng.com&quot; target=&quot;_blank&quot; style=&quot;color:#fff&quot;&gt;www.aircheng.com&lt;/a&gt; Copyright &amp;copy; 2005-2014&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+_webUrl = &quot;/iwebshop/index.php?controller=_controller_&amp;action=_action_&amp;_paramKey_=_paramVal_&quot;;_themePath = &quot;/iwebshop/views/sysdefault/&quot;;_skinPath = &quot;/iwebshop/views/sysdefault/skin/green/&quot;;
+//创建URL地址
+function creatUrl(param)
+{
+	var urlArray   = [];
+	var _tempArray = param.split(&quot;/&quot;);
+	for(var index in _tempArray)
+	{
+		if(_tempArray[index])
+		{
+			urlArray.push(_tempArray[index]);
+		}
+	}
+
+	if(urlArray.length &gt;= 2)
+	{
+		var iwebshopUrl = _webUrl.replace(&quot;_controller_&quot;,urlArray[0]).replace(&quot;_action_&quot;,urlArray[1]);
+
+		//存在URL参数情况
+		if(urlArray.length &gt;= 4)
+		{
+			iwebshopUrl = iwebshopUrl.replace(&quot;_paramKey_&quot;,urlArray[2]);
+
+			//卸载原数组中已经拼接的数据
+			urlArray.splice(0,3);
+
+			if(iwebshopUrl.indexOf(&quot;?&quot;) == -1)
+			{
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,urlArray.join(&quot;/&quot;));
+			}
+			else
+			{
+				var _paramVal_ = &quot;&quot;;
+				for(var i in urlArray)
+				{
+					if(i == 0)
+					{
+						_paramVal_ += urlArray[i];
+					}
+					else if(i%2 == 0)
+					{
+						_paramVal_ += &quot;=&quot;+urlArray[i];
+					}
+					else
+					{
+						_paramVal_ += &quot;&amp;&quot;+urlArray[i];
+					}
+				}
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,_paramVal_);
+			}
+		}
+		return iwebshopUrl;
+	}
+	return '';
+}
+
+//切换验证码
+function changeCaptcha()
+{
+	$('#captchaImg').prop('src',creatUrl(&quot;site/getCaptcha/random/&quot;+Math.random()));
+}
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;art.dialog.tips(&quot;验证码输入不正确&quot;)&lt;/script&gt;</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:37:07</td>
+<td title="级别"><font color="#FFFFFF" style="background: #BB3300;"><strong>WARN</strong></font></td>
+<td title="所在行">ReportUtils.java:69</td>
+<td title="信息">测试不通过</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Automation Log</title>
+<meta charset="utf-8"><style type="text/css">
+<!--
+body, table {font-family: '微软雅黑',arial,sans-serif; font-size: 12px;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th width="13%">执行时间</th>
+<th width="8%">级别</th>
+<th width="15%">所在行</th>
+<th>信息</th>
+</tr>
+<br></br>
+
+<tr>
+<td title="执行时间">2017-04-20 15:38:11</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">开始执行get请求</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:38:11</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">组装url</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:38:11</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">http://192.168.1.167/iwebshop/index.php?controller=systemadmin&amp;action=login_act&amp;admin_name=admin&amp;password=123456.0&amp;captcha=captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:38:11</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">现在的uri:http://192.168.1.167/iwebshop/index.php?controller=systemadmin&amp;action=login_act&amp;admin_name=admin&amp;password=123456.0&amp;captcha=captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:38:11</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">jsonObject&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;管理后台登录&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/iwebshop/views/sysdefault/skin/green/css/admin.css&quot; /&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/iwebshop/views/sysdefault/javascript/common.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/jquery/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/artDialog.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/plugins/iframeTools.js&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/iwebshop/runtime/_systemjs/artdialog/skins/aero.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body id=&quot;login&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;logo&quot;&gt;
+				&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/iwebshop/views/sysdefault/skin/green/images/admin/logo.png&quot; width=&quot;303&quot; height=&quot;43&quot; /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;wrapper&quot; class=&quot;clearfix&quot;&gt;
+			&lt;div class=&quot;login_box&quot;&gt;
+				&lt;div class=&quot;login_title&quot;&gt;后台管理登录&lt;/div&gt;
+				&lt;div class=&quot;login_cont&quot;&gt;
+					&lt;form action='/iwebshop/index.php?controller=systemadmin&amp;action=login_act' method='post'&gt;
+						&lt;table class=&quot;form_table&quot;&gt;
+							&lt;col width=&quot;90px&quot; /&gt;
+							&lt;col /&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;用户名：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;text&quot; name=&quot;admin_name&quot; alt=&quot;请填写用户名&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;密码：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;password&quot; name=&quot;password&quot; alt=&quot;请填写密码&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;验证码：&lt;/th&gt;&lt;td&gt;&lt;input style=&quot;width:85px&quot; type='text' class='normal' name='captcha' pattern='^\w{5,10}$' alt='填写下面图片所示的字符' /&gt;&lt;label&gt;填写下图所示字符&lt;/label&gt;&lt;/td&gt;
+						  	&lt;/tr&gt;
+							&lt;tr class=&quot;low&quot;&gt;
+								&lt;th&gt;&lt;/th&gt;
+								&lt;td&gt;&lt;img src='/iwebshop/index.php?controller=simple&amp;action=getCaptcha' id='captchaImg' /&gt;&lt;span class=&quot;light_gray&quot;&gt;看不清？&lt;a class=&quot;link&quot; href=&quot;javascript:changeCaptcha();&quot;&gt;换一张&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;登录&quot; /&gt;&lt;input class=&quot;submit&quot; type=&quot;reset&quot; value=&quot;取消&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/table&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;footer&quot;&gt;Power by &lt;a href=&quot;http://www.aircheng.com&quot; target=&quot;_blank&quot; style=&quot;color:#fff&quot;&gt;www.aircheng.com&lt;/a&gt; Copyright &amp;copy; 2005-2014&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+_webUrl = &quot;/iwebshop/index.php?controller=_controller_&amp;action=_action_&amp;_paramKey_=_paramVal_&quot;;_themePath = &quot;/iwebshop/views/sysdefault/&quot;;_skinPath = &quot;/iwebshop/views/sysdefault/skin/green/&quot;;
+//创建URL地址
+function creatUrl(param)
+{
+	var urlArray   = [];
+	var _tempArray = param.split(&quot;/&quot;);
+	for(var index in _tempArray)
+	{
+		if(_tempArray[index])
+		{
+			urlArray.push(_tempArray[index]);
+		}
+	}
+
+	if(urlArray.length &gt;= 2)
+	{
+		var iwebshopUrl = _webUrl.replace(&quot;_controller_&quot;,urlArray[0]).replace(&quot;_action_&quot;,urlArray[1]);
+
+		//存在URL参数情况
+		if(urlArray.length &gt;= 4)
+		{
+			iwebshopUrl = iwebshopUrl.replace(&quot;_paramKey_&quot;,urlArray[2]);
+
+			//卸载原数组中已经拼接的数据
+			urlArray.splice(0,3);
+
+			if(iwebshopUrl.indexOf(&quot;?&quot;) == -1)
+			{
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,urlArray.join(&quot;/&quot;));
+			}
+			else
+			{
+				var _paramVal_ = &quot;&quot;;
+				for(var i in urlArray)
+				{
+					if(i == 0)
+					{
+						_paramVal_ += urlArray[i];
+					}
+					else if(i%2 == 0)
+					{
+						_paramVal_ += &quot;=&quot;+urlArray[i];
+					}
+					else
+					{
+						_paramVal_ += &quot;&amp;&quot;+urlArray[i];
+					}
+				}
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,_paramVal_);
+			}
+		}
+		return iwebshopUrl;
+	}
+	return '';
+}
+
+//切换验证码
+function changeCaptcha()
+{
+	$('#captchaImg').prop('src',creatUrl(&quot;site/getCaptcha/random/&quot;+Math.random()));
+}
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;art.dialog.tips(&quot;验证码输入不正确&quot;)&lt;/script&gt;</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:38:11</td>
+<td title="级别"><font color="#FFFFFF" style="background: #BB3300;"><strong>WARN</strong></font></td>
+<td title="所在行">ReportUtils.java:69</td>
+<td title="信息">测试不通过</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Automation Log</title>
+<meta charset="utf-8"><style type="text/css">
+<!--
+body, table {font-family: '微软雅黑',arial,sans-serif; font-size: 12px;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th width="13%">执行时间</th>
+<th width="8%">级别</th>
+<th width="15%">所在行</th>
+<th>信息</th>
+</tr>
+<br></br>
+
+<tr>
+<td title="执行时间">2017-04-20 15:39:17</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">开始执行get请求</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:39:17</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">组装url</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:39:17</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">http://192.168.1.167/iwebshop/index.php?controller=systemadmin&amp;action=login_act&amp;admin_name=admin&amp;password=123456.0&amp;captcha=mafag</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:39:17</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">现在的uri:http://192.168.1.167/iwebshop/index.php?controller=systemadmin&amp;action=login_act&amp;admin_name=admin&amp;password=123456.0&amp;captcha=mafag</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:39:18</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">jsonObject&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;管理后台登录&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/iwebshop/views/sysdefault/skin/green/css/admin.css&quot; /&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/iwebshop/views/sysdefault/javascript/common.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/jquery/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/artDialog.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/plugins/iframeTools.js&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/iwebshop/runtime/_systemjs/artdialog/skins/aero.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body id=&quot;login&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;logo&quot;&gt;
+				&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/iwebshop/views/sysdefault/skin/green/images/admin/logo.png&quot; width=&quot;303&quot; height=&quot;43&quot; /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;wrapper&quot; class=&quot;clearfix&quot;&gt;
+			&lt;div class=&quot;login_box&quot;&gt;
+				&lt;div class=&quot;login_title&quot;&gt;后台管理登录&lt;/div&gt;
+				&lt;div class=&quot;login_cont&quot;&gt;
+					&lt;form action='/iwebshop/index.php?controller=systemadmin&amp;action=login_act' method='post'&gt;
+						&lt;table class=&quot;form_table&quot;&gt;
+							&lt;col width=&quot;90px&quot; /&gt;
+							&lt;col /&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;用户名：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;text&quot; name=&quot;admin_name&quot; alt=&quot;请填写用户名&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;密码：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;password&quot; name=&quot;password&quot; alt=&quot;请填写密码&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;验证码：&lt;/th&gt;&lt;td&gt;&lt;input style=&quot;width:85px&quot; type='text' class='normal' name='captcha' pattern='^\w{5,10}$' alt='填写下面图片所示的字符' /&gt;&lt;label&gt;填写下图所示字符&lt;/label&gt;&lt;/td&gt;
+						  	&lt;/tr&gt;
+							&lt;tr class=&quot;low&quot;&gt;
+								&lt;th&gt;&lt;/th&gt;
+								&lt;td&gt;&lt;img src='/iwebshop/index.php?controller=simple&amp;action=getCaptcha' id='captchaImg' /&gt;&lt;span class=&quot;light_gray&quot;&gt;看不清？&lt;a class=&quot;link&quot; href=&quot;javascript:changeCaptcha();&quot;&gt;换一张&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;登录&quot; /&gt;&lt;input class=&quot;submit&quot; type=&quot;reset&quot; value=&quot;取消&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/table&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;footer&quot;&gt;Power by &lt;a href=&quot;http://www.aircheng.com&quot; target=&quot;_blank&quot; style=&quot;color:#fff&quot;&gt;www.aircheng.com&lt;/a&gt; Copyright &amp;copy; 2005-2014&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+_webUrl = &quot;/iwebshop/index.php?controller=_controller_&amp;action=_action_&amp;_paramKey_=_paramVal_&quot;;_themePath = &quot;/iwebshop/views/sysdefault/&quot;;_skinPath = &quot;/iwebshop/views/sysdefault/skin/green/&quot;;
+//创建URL地址
+function creatUrl(param)
+{
+	var urlArray   = [];
+	var _tempArray = param.split(&quot;/&quot;);
+	for(var index in _tempArray)
+	{
+		if(_tempArray[index])
+		{
+			urlArray.push(_tempArray[index]);
+		}
+	}
+
+	if(urlArray.length &gt;= 2)
+	{
+		var iwebshopUrl = _webUrl.replace(&quot;_controller_&quot;,urlArray[0]).replace(&quot;_action_&quot;,urlArray[1]);
+
+		//存在URL参数情况
+		if(urlArray.length &gt;= 4)
+		{
+			iwebshopUrl = iwebshopUrl.replace(&quot;_paramKey_&quot;,urlArray[2]);
+
+			//卸载原数组中已经拼接的数据
+			urlArray.splice(0,3);
+
+			if(iwebshopUrl.indexOf(&quot;?&quot;) == -1)
+			{
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,urlArray.join(&quot;/&quot;));
+			}
+			else
+			{
+				var _paramVal_ = &quot;&quot;;
+				for(var i in urlArray)
+				{
+					if(i == 0)
+					{
+						_paramVal_ += urlArray[i];
+					}
+					else if(i%2 == 0)
+					{
+						_paramVal_ += &quot;=&quot;+urlArray[i];
+					}
+					else
+					{
+						_paramVal_ += &quot;&amp;&quot;+urlArray[i];
+					}
+				}
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,_paramVal_);
+			}
+		}
+		return iwebshopUrl;
+	}
+	return '';
+}
+
+//切换验证码
+function changeCaptcha()
+{
+	$('#captchaImg').prop('src',creatUrl(&quot;site/getCaptcha/random/&quot;+Math.random()));
+}
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;art.dialog.tips(&quot;验证码输入不正确&quot;)&lt;/script&gt;</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 15:39:18</td>
+<td title="级别"><font color="#FFFFFF" style="background: #BB3300;"><strong>WARN</strong></font></td>
+<td title="所在行">ReportUtils.java:69</td>
+<td title="信息">测试不通过</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Automation Log</title>
+<meta charset="utf-8"><style type="text/css">
+<!--
+body, table {font-family: '微软雅黑',arial,sans-serif; font-size: 12px;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th width="13%">执行时间</th>
+<th width="8%">级别</th>
+<th width="15%">所在行</th>
+<th>信息</th>
+</tr>
+<br></br>
+
+<tr>
+<td title="执行时间">2017-04-20 16:05:44</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">开始执行get请求</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:05:44</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">组装url</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:05:44</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">http://192.168.1.167/iwebshop/index.php?controller=goods&amp;action=goods_list?controller&amp;action&amp;admin_name&amp;password&amp;captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:05:44</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">现在的uri:http://192.168.1.167/iwebshop/index.php?controller=goods&amp;action=goods_list?controller&amp;action&amp;admin_name&amp;password&amp;captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:05:45</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">jsonObject&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;管理后台登录&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/iwebshop/views/sysdefault/skin/green/css/admin.css&quot; /&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/iwebshop/views/sysdefault/javascript/common.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/jquery/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/artDialog.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/plugins/iframeTools.js&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/iwebshop/runtime/_systemjs/artdialog/skins/aero.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body id=&quot;login&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;logo&quot;&gt;
+				&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/iwebshop/views/sysdefault/skin/green/images/admin/logo.png&quot; width=&quot;303&quot; height=&quot;43&quot; /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;wrapper&quot; class=&quot;clearfix&quot;&gt;
+			&lt;div class=&quot;login_box&quot;&gt;
+				&lt;div class=&quot;login_title&quot;&gt;后台管理登录&lt;/div&gt;
+				&lt;div class=&quot;login_cont&quot;&gt;
+					&lt;form action='/iwebshop/index.php?controller=systemadmin&amp;action=login_act' method='post'&gt;
+						&lt;table class=&quot;form_table&quot;&gt;
+							&lt;col width=&quot;90px&quot; /&gt;
+							&lt;col /&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;用户名：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;text&quot; name=&quot;admin_name&quot; alt=&quot;请填写用户名&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;密码：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;password&quot; name=&quot;password&quot; alt=&quot;请填写密码&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;验证码：&lt;/th&gt;&lt;td&gt;&lt;input style=&quot;width:85px&quot; type='text' class='normal' name='captcha' pattern='^\w{5,10}$' alt='填写下面图片所示的字符' /&gt;&lt;label&gt;填写下图所示字符&lt;/label&gt;&lt;/td&gt;
+						  	&lt;/tr&gt;
+							&lt;tr class=&quot;low&quot;&gt;
+								&lt;th&gt;&lt;/th&gt;
+								&lt;td&gt;&lt;img src='/iwebshop/index.php?controller=simple&amp;action=getCaptcha' id='captchaImg' /&gt;&lt;span class=&quot;light_gray&quot;&gt;看不清？&lt;a class=&quot;link&quot; href=&quot;javascript:changeCaptcha();&quot;&gt;换一张&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;登录&quot; /&gt;&lt;input class=&quot;submit&quot; type=&quot;reset&quot; value=&quot;取消&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/table&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;footer&quot;&gt;Power by &lt;a href=&quot;http://www.aircheng.com&quot; target=&quot;_blank&quot; style=&quot;color:#fff&quot;&gt;www.aircheng.com&lt;/a&gt; Copyright &amp;copy; 2005-2014&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+_webUrl = &quot;/iwebshop/index.php?controller=_controller_&amp;action=_action_&amp;_paramKey_=_paramVal_&quot;;_themePath = &quot;/iwebshop/views/sysdefault/&quot;;_skinPath = &quot;/iwebshop/views/sysdefault/skin/green/&quot;;
+//创建URL地址
+function creatUrl(param)
+{
+	var urlArray   = [];
+	var _tempArray = param.split(&quot;/&quot;);
+	for(var index in _tempArray)
+	{
+		if(_tempArray[index])
+		{
+			urlArray.push(_tempArray[index]);
+		}
+	}
+
+	if(urlArray.length &gt;= 2)
+	{
+		var iwebshopUrl = _webUrl.replace(&quot;_controller_&quot;,urlArray[0]).replace(&quot;_action_&quot;,urlArray[1]);
+
+		//存在URL参数情况
+		if(urlArray.length &gt;= 4)
+		{
+			iwebshopUrl = iwebshopUrl.replace(&quot;_paramKey_&quot;,urlArray[2]);
+
+			//卸载原数组中已经拼接的数据
+			urlArray.splice(0,3);
+
+			if(iwebshopUrl.indexOf(&quot;?&quot;) == -1)
+			{
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,urlArray.join(&quot;/&quot;));
+			}
+			else
+			{
+				var _paramVal_ = &quot;&quot;;
+				for(var i in urlArray)
+				{
+					if(i == 0)
+					{
+						_paramVal_ += urlArray[i];
+					}
+					else if(i%2 == 0)
+					{
+						_paramVal_ += &quot;=&quot;+urlArray[i];
+					}
+					else
+					{
+						_paramVal_ += &quot;&amp;&quot;+urlArray[i];
+					}
+				}
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,_paramVal_);
+			}
+		}
+		return iwebshopUrl;
+	}
+	return '';
+}
+
+//切换验证码
+function changeCaptcha()
+{
+	$('#captchaImg').prop('src',creatUrl(&quot;site/getCaptcha/random/&quot;+Math.random()));
+}
+&lt;/script&gt;</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:05:45</td>
+<td title="级别"><font color="#FFFFFF" style="background: #BB3300;"><strong>WARN</strong></font></td>
+<td title="所在行">ReportUtils.java:69</td>
+<td title="信息">测试不通过</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Automation Log</title>
+<meta charset="utf-8"><style type="text/css">
+<!--
+body, table {font-family: '微软雅黑',arial,sans-serif; font-size: 12px;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th width="13%">执行时间</th>
+<th width="8%">级别</th>
+<th width="15%">所在行</th>
+<th>信息</th>
+</tr>
+<br></br>
+
+<tr>
+<td title="执行时间">2017-04-20 16:09:51</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">开始执行get请求</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:09:51</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">组装url</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:09:51</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">http://192.168.1.167/iwebshop/index.php?controller=goods&amp;action=goods_list?controller&amp;action&amp;admin_name&amp;password&amp;captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:09:51</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">现在的uri:http://192.168.1.167/iwebshop/index.php?controller=goods&amp;action=goods_list?controller&amp;action&amp;admin_name&amp;password&amp;captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:09:51</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">jsonObject&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;管理后台登录&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/iwebshop/views/sysdefault/skin/green/css/admin.css&quot; /&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/iwebshop/views/sysdefault/javascript/common.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/jquery/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/artDialog.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/plugins/iframeTools.js&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/iwebshop/runtime/_systemjs/artdialog/skins/aero.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body id=&quot;login&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;logo&quot;&gt;
+				&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/iwebshop/views/sysdefault/skin/green/images/admin/logo.png&quot; width=&quot;303&quot; height=&quot;43&quot; /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;wrapper&quot; class=&quot;clearfix&quot;&gt;
+			&lt;div class=&quot;login_box&quot;&gt;
+				&lt;div class=&quot;login_title&quot;&gt;后台管理登录&lt;/div&gt;
+				&lt;div class=&quot;login_cont&quot;&gt;
+					&lt;form action='/iwebshop/index.php?controller=systemadmin&amp;action=login_act' method='post'&gt;
+						&lt;table class=&quot;form_table&quot;&gt;
+							&lt;col width=&quot;90px&quot; /&gt;
+							&lt;col /&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;用户名：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;text&quot; name=&quot;admin_name&quot; alt=&quot;请填写用户名&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;密码：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;password&quot; name=&quot;password&quot; alt=&quot;请填写密码&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;验证码：&lt;/th&gt;&lt;td&gt;&lt;input style=&quot;width:85px&quot; type='text' class='normal' name='captcha' pattern='^\w{5,10}$' alt='填写下面图片所示的字符' /&gt;&lt;label&gt;填写下图所示字符&lt;/label&gt;&lt;/td&gt;
+						  	&lt;/tr&gt;
+							&lt;tr class=&quot;low&quot;&gt;
+								&lt;th&gt;&lt;/th&gt;
+								&lt;td&gt;&lt;img src='/iwebshop/index.php?controller=simple&amp;action=getCaptcha' id='captchaImg' /&gt;&lt;span class=&quot;light_gray&quot;&gt;看不清？&lt;a class=&quot;link&quot; href=&quot;javascript:changeCaptcha();&quot;&gt;换一张&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;登录&quot; /&gt;&lt;input class=&quot;submit&quot; type=&quot;reset&quot; value=&quot;取消&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/table&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;footer&quot;&gt;Power by &lt;a href=&quot;http://www.aircheng.com&quot; target=&quot;_blank&quot; style=&quot;color:#fff&quot;&gt;www.aircheng.com&lt;/a&gt; Copyright &amp;copy; 2005-2014&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+_webUrl = &quot;/iwebshop/index.php?controller=_controller_&amp;action=_action_&amp;_paramKey_=_paramVal_&quot;;_themePath = &quot;/iwebshop/views/sysdefault/&quot;;_skinPath = &quot;/iwebshop/views/sysdefault/skin/green/&quot;;
+//创建URL地址
+function creatUrl(param)
+{
+	var urlArray   = [];
+	var _tempArray = param.split(&quot;/&quot;);
+	for(var index in _tempArray)
+	{
+		if(_tempArray[index])
+		{
+			urlArray.push(_tempArray[index]);
+		}
+	}
+
+	if(urlArray.length &gt;= 2)
+	{
+		var iwebshopUrl = _webUrl.replace(&quot;_controller_&quot;,urlArray[0]).replace(&quot;_action_&quot;,urlArray[1]);
+
+		//存在URL参数情况
+		if(urlArray.length &gt;= 4)
+		{
+			iwebshopUrl = iwebshopUrl.replace(&quot;_paramKey_&quot;,urlArray[2]);
+
+			//卸载原数组中已经拼接的数据
+			urlArray.splice(0,3);
+
+			if(iwebshopUrl.indexOf(&quot;?&quot;) == -1)
+			{
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,urlArray.join(&quot;/&quot;));
+			}
+			else
+			{
+				var _paramVal_ = &quot;&quot;;
+				for(var i in urlArray)
+				{
+					if(i == 0)
+					{
+						_paramVal_ += urlArray[i];
+					}
+					else if(i%2 == 0)
+					{
+						_paramVal_ += &quot;=&quot;+urlArray[i];
+					}
+					else
+					{
+						_paramVal_ += &quot;&amp;&quot;+urlArray[i];
+					}
+				}
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,_paramVal_);
+			}
+		}
+		return iwebshopUrl;
+	}
+	return '';
+}
+
+//切换验证码
+function changeCaptcha()
+{
+	$('#captchaImg').prop('src',creatUrl(&quot;site/getCaptcha/random/&quot;+Math.random()));
+}
+&lt;/script&gt;</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:09:51</td>
+<td title="级别"><font color="#FFFFFF" style="background: #BB3300;"><strong>WARN</strong></font></td>
+<td title="所在行">ReportUtils.java:69</td>
+<td title="信息">测试不通过</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Automation Log</title>
+<meta charset="utf-8"><style type="text/css">
+<!--
+body, table {font-family: '微软雅黑',arial,sans-serif; font-size: 12px;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th width="13%">执行时间</th>
+<th width="8%">级别</th>
+<th width="15%">所在行</th>
+<th>信息</th>
+</tr>
+<br></br>
+
+<tr>
+<td title="执行时间">2017-04-20 16:13:24</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">开始执行get请求</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:13:24</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">组装url</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:13:24</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">http://192.168.1.167/iwebshop/index.php?controller=goods&amp;action=goods_list?controller&amp;action&amp;admin_name&amp;password&amp;captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:13:24</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">现在的uri:http://192.168.1.167/iwebshop/index.php?controller=goods&amp;action=goods_list?controller&amp;action&amp;admin_name&amp;password&amp;captcha</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:13:25</td>
+<td title="级别"><font color="green">INFO</font></td>
+<td title="所在行">ReportUtils.java:32</td>
+<td title="信息">jsonObject&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;title&gt;管理后台登录&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/iwebshop/views/sysdefault/skin/green/css/admin.css&quot; /&gt;
+&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/iwebshop/views/sysdefault/javascript/common.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/jquery/jquery-1.12.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/artDialog.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;UTF-8&quot; src=&quot;/iwebshop/runtime/_systemjs/artdialog/plugins/iframeTools.js&quot;&gt;&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/iwebshop/runtime/_systemjs/artdialog/skins/aero.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body id=&quot;login&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div id=&quot;header&quot;&gt;
+			&lt;div class=&quot;logo&quot;&gt;
+				&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;/iwebshop/views/sysdefault/skin/green/images/admin/logo.png&quot; width=&quot;303&quot; height=&quot;43&quot; /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;wrapper&quot; class=&quot;clearfix&quot;&gt;
+			&lt;div class=&quot;login_box&quot;&gt;
+				&lt;div class=&quot;login_title&quot;&gt;后台管理登录&lt;/div&gt;
+				&lt;div class=&quot;login_cont&quot;&gt;
+					&lt;form action='/iwebshop/index.php?controller=systemadmin&amp;action=login_act' method='post'&gt;
+						&lt;table class=&quot;form_table&quot;&gt;
+							&lt;col width=&quot;90px&quot; /&gt;
+							&lt;col /&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;用户名：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;text&quot; name=&quot;admin_name&quot; alt=&quot;请填写用户名&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;密码：&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;normal&quot; type=&quot;password&quot; name=&quot;password&quot; alt=&quot;请填写密码&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;验证码：&lt;/th&gt;&lt;td&gt;&lt;input style=&quot;width:85px&quot; type='text' class='normal' name='captcha' pattern='^\w{5,10}$' alt='填写下面图片所示的字符' /&gt;&lt;label&gt;填写下图所示字符&lt;/label&gt;&lt;/td&gt;
+						  	&lt;/tr&gt;
+							&lt;tr class=&quot;low&quot;&gt;
+								&lt;th&gt;&lt;/th&gt;
+								&lt;td&gt;&lt;img src='/iwebshop/index.php?controller=simple&amp;action=getCaptcha' id='captchaImg' /&gt;&lt;span class=&quot;light_gray&quot;&gt;看不清？&lt;a class=&quot;link&quot; href=&quot;javascript:changeCaptcha();&quot;&gt;换一张&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;th valign=&quot;middle&quot;&gt;&lt;/th&gt;&lt;td&gt;&lt;input class=&quot;submit&quot; type=&quot;submit&quot; value=&quot;登录&quot; /&gt;&lt;input class=&quot;submit&quot; type=&quot;reset&quot; value=&quot;取消&quot; /&gt;&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/table&gt;
+					&lt;/form&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;footer&quot;&gt;Power by &lt;a href=&quot;http://www.aircheng.com&quot; target=&quot;_blank&quot; style=&quot;color:#fff&quot;&gt;www.aircheng.com&lt;/a&gt; Copyright &amp;copy; 2005-2014&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+_webUrl = &quot;/iwebshop/index.php?controller=_controller_&amp;action=_action_&amp;_paramKey_=_paramVal_&quot;;_themePath = &quot;/iwebshop/views/sysdefault/&quot;;_skinPath = &quot;/iwebshop/views/sysdefault/skin/green/&quot;;
+//创建URL地址
+function creatUrl(param)
+{
+	var urlArray   = [];
+	var _tempArray = param.split(&quot;/&quot;);
+	for(var index in _tempArray)
+	{
+		if(_tempArray[index])
+		{
+			urlArray.push(_tempArray[index]);
+		}
+	}
+
+	if(urlArray.length &gt;= 2)
+	{
+		var iwebshopUrl = _webUrl.replace(&quot;_controller_&quot;,urlArray[0]).replace(&quot;_action_&quot;,urlArray[1]);
+
+		//存在URL参数情况
+		if(urlArray.length &gt;= 4)
+		{
+			iwebshopUrl = iwebshopUrl.replace(&quot;_paramKey_&quot;,urlArray[2]);
+
+			//卸载原数组中已经拼接的数据
+			urlArray.splice(0,3);
+
+			if(iwebshopUrl.indexOf(&quot;?&quot;) == -1)
+			{
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,urlArray.join(&quot;/&quot;));
+			}
+			else
+			{
+				var _paramVal_ = &quot;&quot;;
+				for(var i in urlArray)
+				{
+					if(i == 0)
+					{
+						_paramVal_ += urlArray[i];
+					}
+					else if(i%2 == 0)
+					{
+						_paramVal_ += &quot;=&quot;+urlArray[i];
+					}
+					else
+					{
+						_paramVal_ += &quot;&amp;&quot;+urlArray[i];
+					}
+				}
+				iwebshopUrl = iwebshopUrl.replace(&quot;_paramVal_&quot;,_paramVal_);
+			}
+		}
+		return iwebshopUrl;
+	}
+	return '';
+}
+
+//切换验证码
+function changeCaptcha()
+{
+	$('#captchaImg').prop('src',creatUrl(&quot;site/getCaptcha/random/&quot;+Math.random()));
+}
+&lt;/script&gt;</td>
+</tr>
+
+<tr>
+<td title="执行时间">2017-04-20 16:13:25</td>
+<td title="级别"><font color="#FFFFFF" style="background: #BB3300;"><strong>WARN</strong></font></td>
+<td title="所在行">ReportUtils.java:69</td>
+<td title="信息">测试不通过</td>
+</tr>
