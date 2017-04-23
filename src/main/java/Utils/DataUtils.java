@@ -1,5 +1,6 @@
 package Utils;
 
+import InterfaceFramework.Iwebshop.RequestUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.JSONPath;
@@ -87,14 +88,13 @@ public class DataUtils {
         }
     }
     public static void main(String[] args) {
-//        String url="http://192.168.42.128/phpwind/";
-//        Map map=new HashMap();
-//        String response=kuangJia.get(url,map);
-//
+//        String url="http://localhost:82/iwebshop/index.php";
+//        String response= RequestUtils.Get(url,null);
+//        Document doc = new Document(response);
 //        //response=HtmlParse(response,"name","csrf_token","value");
 //        //response=HtmlParse(response,"a[role=button]","tabindex");
-//        response=HtmlParse(response,"a[id=back_top]");
-//        System.out.println(response);
+//        //String response1=HtmlParse(response,doc.title());
+//        System.out.println(doc.title());
 
     }
 
