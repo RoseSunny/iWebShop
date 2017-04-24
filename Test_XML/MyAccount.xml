@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite">
+    <test name="test" preserve-order="true" allow-return-values="true">
+        <classes>
+            <class name="Iwebshop.MyAccount_Test"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener
+                class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener
+                class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+</suite>
