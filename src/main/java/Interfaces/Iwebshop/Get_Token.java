@@ -1,11 +1,9 @@
 package Interfaces.Iwebshop;
 
-import InterfaceFramework.weixin.RequestUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
