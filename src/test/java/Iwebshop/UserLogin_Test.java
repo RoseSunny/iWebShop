@@ -227,8 +227,4 @@ public class UserLogin_Test {
             report.error("错误");
         }
     }
-
-    public static void main(String[] args) {
-
-    }
 }
