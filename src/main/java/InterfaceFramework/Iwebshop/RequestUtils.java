@@ -119,14 +119,14 @@ public class RequestUtils {
         return stringresponse;
     }
     //对excel中获取的表头进行匹配，并将符合的数据放入list
-    private static List<NameValuePair> list(Map<String,String> map){
+    private static List<NameValuePair> list(Map<String,String> map,String values){
         List<NameValuePair> list1 = new ArrayList<NameValuePair>();
         Set set = map.keySet();
         Iterator itr = set.iterator();
         while (itr.hasNext()){
             String key = itr.next().toString();
             String value = map.get(key);
-            boolean contain = key.contains("参数");
+            boolean contain = key.contains(values);
             if (contain == true){
                 String[] key1 = key.split(":");
                 String listKey = key1[1];
@@ -137,12 +137,12 @@ public class RequestUtils {
         return list1;
     }
     //post上传list数据
-    public static String Post(String url,Map<String,String> map){
+    public static String Post(String url,Map<String,String> map,String values){
         CloseableHttpClient httpClient = HttpClients.createDefault(); // 创建HttpClient实例
         CloseableHttpResponse response=null;
         String stringresponse=null;
-        report.log("同请求发送的"+list(map));
-        UrlEncodedFormEntity postentity=new UrlEncodedFormEntity(list(map), Consts.UTF_8);//把要上传的参数转换成一个实体
+        report.log("同请求发送的"+list(map,values));
+        UrlEncodedFormEntity postentity=new UrlEncodedFormEntity(list(map,values), Consts.UTF_8);//把要上传的参数转换成一个实体
         report.log("开始执行post请求");
         HttpPost post = new HttpPost(url);// 创建httpPost
         post.setEntity(postentity);//把实体添加到请求中
