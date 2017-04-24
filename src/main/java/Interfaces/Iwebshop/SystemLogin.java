@@ -1,5 +1,6 @@
 package Interfaces.Iwebshop;
 
+import InterfaceFramework.Iwebshop.RequestUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
@@ -20,7 +21,7 @@ public class SystemLogin {
         list.add(new BasicNameValuePair("password",map.get("参数password")));
         list.add(new BasicNameValuePair("captcha",map.get("参数captcha")));
 
-        response= InterfaceFramework.Iwebshop.RequestUtils.Get(map.get("接口地址"),list);
+        response= RequestUtils.Get(map.get("接口地址"),list);
         return response;
     }
 }

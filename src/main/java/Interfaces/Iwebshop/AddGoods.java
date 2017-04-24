@@ -43,7 +43,7 @@ public class AddGoods {
         list.add(new BasicNameValuePair("keywords",map.get("参数keywords")));
         list.add(new BasicNameValuePair("description",map.get("参数description")));
 
-        response= InterfaceFramework.Iwebshop.RequestUtils.Post(map.get("接口地址"),list);
+//        response= InterfaceFramework.Iwebshop.RequestUtils.Post(map.get("接口地址"),list);
         return response;
     }
 }
