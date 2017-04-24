@@ -23,7 +23,7 @@ public class UserLogin {
         List<NameValuePair> list1=new ArrayList();
         list1.add(new BasicNameValuePair("login_info",map.get("参数:login_info")));
         list1.add(new BasicNameValuePair("password",map.get("参数:password")));
-        response = RequestUtils.Post1(url,list1);//RequestUtils.Post(url,map);
+       // response = RequestUtils.Post1(url,list1);//RequestUtils.Post(url,map);
         return response;
     }
 

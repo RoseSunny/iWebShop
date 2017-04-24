@@ -19,7 +19,6 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.client.LaxRedirectStrategy;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-import org.apache.poi.hssf.record.formula.functions.T;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,6 +37,25 @@ public class RequestUtils {
     //利用LaxRedirectStrategy处理post重定向问题
     private static CloseableHttpClient httpClient = builder.build();
 
+    //对excel中获取的表头进行匹配，并将符合的数据放入list
+    public static List<NameValuePair> list(Map<String,String> map,String values){
+        List<NameValuePair> list = new ArrayList<NameValuePair>();
+        Set set = map.keySet();
+        Iterator itr = set.iterator();
+        while (itr.hasNext()){
+            String key = itr.next().toString();
+            String value = map.get(key);
+            boolean contain = key.contains(values);
+            if (contain == true){
+                String[] key1 = key.split(":");
+                String listKey = key1[1];
+                list.add(new BasicNameValuePair(listKey,value));
+            }
+        }
+        return list;
+    }
+
+    //private static CloseableHttpClient httpClient =HttpClients.createDefault();
     //传递Map类型的参数组装成url返回
     public static String getUrl(String url, List<NameValuePair>... parameter) {
         report.log("组装url");
@@ -51,6 +69,7 @@ public class RequestUtils {
         report.log(url);
         return url;
     }
+
     //判断是否有参数的get，并执行
     public static String Get(String url, List<NameValuePair>... parameter){
         report.log("开始执行get请求");
@@ -59,18 +78,19 @@ public class RequestUtils {
             report.error("url为空，不执行请求");
             return null;
         } else {
-            if(parameter != null){
+            if(parameter.length!=0){
                 stringresponse=doGet(getUrl(url,parameter));
-            }else{
+            }else {
                 stringresponse=doGet(url);
                 return stringresponse;
             }
         }
         return stringresponse;
     }
+
     //执行get请求
-    private static String doGet(String url){
-        CloseableHttpClient httpClient =HttpClients.createDefault();
+    public static String doGet(String url){
+        //CloseableHttpClient httpClient =HttpClients.createDefault();
         HttpGet httpGet = new HttpGet(url);
         CloseableHttpResponse response = null;
         String stringresponse=null;
@@ -78,7 +98,7 @@ public class RequestUtils {
             report.log("现在的uri:"+url);
             response = httpClient.execute(httpGet);
             if(response!=null){
-                stringresponse=ToString(response);
+                stringresponse=toString(response);
             }else {
                 report.error("response为空");
             }
@@ -88,9 +108,10 @@ public class RequestUtils {
         //System.out.println("stringresponse:"+stringresponse);
         return stringresponse;
     }
+
     //post上传JSONObject数据
     public static String Post(String url,String jsonobject){
-        CloseableHttpClient httpClient =HttpClients.createDefault();
+        //CloseableHttpClient httpClient =HttpClients.createDefault();
         HttpPost post=new HttpPost(url);
         CloseableHttpResponse response = null;
         String stringresponse=null;
@@ -103,7 +124,7 @@ public class RequestUtils {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                stringresponse=ToString(response);
+                stringresponse=toString(response);
             }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -118,50 +139,39 @@ public class RequestUtils {
         }
         return stringresponse;
     }
-    //对excel中获取的表头进行匹配，并将符合的数据放入list
-    private static List<NameValuePair> list(Map<String,String> map,String values){
-        List<NameValuePair> list1 = new ArrayList<NameValuePair>();
-        Set set = map.keySet();
-        Iterator itr = set.iterator();
-        while (itr.hasNext()){
-            String key = itr.next().toString();
-            String value = map.get(key);
-            boolean contain = key.contains(values);
-            if (contain == true){
-                String[] key1 = key.split(":");
-                String listKey = key1[1];
-                list1.add(new BasicNameValuePair(listKey,value));
-            }
-        }
-        System.out.println("LIST值为："+list1);
-        return list1;
-    }
+
     //post上传list数据
-    public static String Post(String url,Map<String,String> map,String values){
-        CloseableHttpClient httpClient = HttpClients.createDefault(); // 创建HttpClient实例
+    public static String Post(String uri,Map<String,String> map,String values){
         CloseableHttpResponse response=null;
         String stringresponse=null;
+        report.log("开始执行post请求");
+        //CloseableHttpClient httpClient = HttpClients.createDefault(); // 创建HttpClient实例
+        HttpPost httpPost=new HttpPost(uri); // 创建httpPost
         report.log("同请求发送的"+list(map,values));
         UrlEncodedFormEntity postentity=new UrlEncodedFormEntity(list(map,values), Consts.UTF_8);//把要上传的参数转换成一个实体
-        report.log("开始执行post请求");
-        HttpPost post = new HttpPost(url);// 创建httpPost
-        post.setEntity(postentity);//把实体添加到请求中
+        httpPost.setEntity(postentity);//把实体添加到请求中
         try {
-            report.log("执行请求的URI为：" + post.getURI());
-            response = httpClient.execute(post);// 执行post请求
-            stringresponse = ToString(response);
+            report.log("执行请求的URI为：" + httpPost.getURI());
+            response = httpClient.execute(httpPost); // 执行post请求
+            stringresponse=toString(response);
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
-                httpClient.close();
                 response.close();
+                //httpClient.close();//关闭连接，释放资源
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
         return stringresponse;
+
     }
+
     //组合post发送图片时的实体
     protected static HttpEntity entityTP(String pathname){
         File file = new File(pathname);
@@ -170,6 +180,7 @@ public class RequestUtils {
         HttpEntity entity = multipart.build();
         return entity;
     }
+
     //post方法发送多媒体文件：请求-->响应
     public static String PostTP(String url,String pathname){
         CloseableHttpResponse response = null;
@@ -182,12 +193,13 @@ public class RequestUtils {
         httpPost.setEntity(entity);
         try {
             response = httpClient.execute(httpPost);
-            stringResponse = ToString(response);
+            stringResponse = toString(response);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return stringResponse;
     }
+
     public static String postTP(String url, String pathname, List<NameValuePair> ... parameter){
         report.log("发送httpPost请求");
         String stringResponse = null;
@@ -203,9 +215,10 @@ public class RequestUtils {
         }
         return stringResponse;
     }
+
     //上传媒体文件post请求
     static public String Post(String url, File file,List<NameValuePair> ...parameter) {
-        CloseableHttpClient httpClient = HttpClients.createDefault();//定义一个httpclient
+        //CloseableHttpClient httpClient = HttpClients.createDefault();//定义一个httpclient
         String response1 = null;//定义一个字符串类型响应消息
         CloseableHttpResponse response = null;//定义一个响应消息
         //声明多媒体文件构建工具
@@ -217,7 +230,7 @@ public class RequestUtils {
         post.setEntity(entityBuilder.build());
         try {
             response = httpClient.execute(post);//执行post请求
-            response1 = ToString(response);
+            response1 = toString(response);
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
@@ -230,9 +243,10 @@ public class RequestUtils {
         }
         return response1;
     }
+
     //响应转化为字符串
-    private static String ToString(CloseableHttpResponse response){
-        CloseableHttpClient httpClient =HttpClients.createDefault();
+    private static String toString(CloseableHttpResponse response){
+        //CloseableHttpClient httpClient =HttpClients.createDefault();
         String stringresponse=null;
         try {
             if (response != null) {
@@ -241,7 +255,7 @@ public class RequestUtils {
                 // 若状态码不为200，则关闭response，若为200，则获取返回信息
                 if (statuCode != 200) {
                     if(response.getEntity().getContentLength()==0){
-                        report.log("返回实体内容为空");
+                        report.error("返回实体内容为空");
                         return null;
                     }
                     report.error("访问失败，返回的状态码为：" + statuCode + response.getStatusLine());
@@ -260,7 +274,7 @@ public class RequestUtils {
         } finally {
             try {
                 response.close();
-                httpClient.close();
+                //httpClient.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -272,7 +286,7 @@ public class RequestUtils {
     //Put方法
     public static String Put(String url,List<NameValuePair> list) {
         report.log("开始put方法");
-        CloseableHttpClient httpClient = HttpClients.createDefault();
+        //CloseableHttpClient httpClient = HttpClients.createDefault();
         String stringresponse = null;
         CloseableHttpResponse response = null;
         try {
@@ -280,7 +294,7 @@ public class RequestUtils {
             HttpPost post = new HttpPost(url);
             post.setEntity(entity);
             response = httpClient.execute(post);
-            stringresponse =ToString(response);
+            stringresponse =toString(response);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (ClientProtocolException e) {
@@ -299,14 +313,14 @@ public class RequestUtils {
     }
     //Delete
     public static String Delete(String uri){
-        CloseableHttpClient httpClient = HttpClients.createDefault();
+        //CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpDelete delete = new HttpDelete(uri);
         CloseableHttpResponse response = null;
         String stringresponse=null;
         try {
             System.out.println("现在的uri:"+uri);
             response = httpClient.execute(delete);
-            stringresponse=ToString(response);
+            stringresponse=toString(response);
         } catch (IOException e) {
             e.printStackTrace();
         }finally {
@@ -319,18 +333,5 @@ public class RequestUtils {
             }
         }
         return stringresponse;
-    }
-
-    //post方法
-    static public String Post1(String uri,List<NameValuePair> list) throws IOException{
-        CloseableHttpClient httpClient =HttpClients.createDefault();
-        report.log("开始post方法");
-        String strResponse = null;
-        UrlEncodedFormEntity entity =new UrlEncodedFormEntity(list);
-        HttpPost post=new HttpPost(uri);
-        post.setEntity(entity);
-        CloseableHttpResponse response = httpClient.execute(post);
-        strResponse =EntityUtils.toString(response.getEntity(),"utf-8");
-        return strResponse;
     }
 }
