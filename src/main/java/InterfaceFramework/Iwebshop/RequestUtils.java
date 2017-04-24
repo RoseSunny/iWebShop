@@ -43,6 +43,23 @@ public class RequestUtils {
     //利用LaxRedirectStrategy处理post重定向问题
     private static CloseableHttpClient httpClient = builder.build();
     //private static CloseableHttpClient httpClient =HttpClients.createDefault();
+    //对excel中获取的表头进行匹配，并将符合的数据放入list
+    public static List<NameValuePair> list(Map<String,String> map){
+        List<NameValuePair> list = new ArrayList<NameValuePair>();
+        Set set = map.keySet();
+        Iterator itr = set.iterator();
+        while (itr.hasNext()){
+            String key = itr.next().toString();
+            String value = map.get(key);
+            boolean contain = key.contains("参数");
+            if (contain == true){
+                String[] key1 = key.split(":");
+                String listKey = key1[1];
+                list.add(new BasicNameValuePair(listKey,value));
+            }
+        }
+        return list;
+    }
     //传递Map类型的参数组装成url返回
     public static String getUrl(String url, List<NameValuePair>... parameter) {
         report.log("组装url");
@@ -123,23 +140,7 @@ public class RequestUtils {
         }
         return stringresponse;
     }
-    //对excel中获取的表头进行匹配，并将符合的数据放入list
-    private static List<NameValuePair> list(Map<String,String> map){
-        List<NameValuePair> list = new ArrayList<NameValuePair>();
-        Set set = map.keySet();
-        Iterator itr = set.iterator();
-        while (itr.hasNext()){
-            String key = itr.next().toString();
-            String value = map.get(key);
-            boolean contain = key.contains("参数");
-            if (contain == true){
-                String[] key1 = key.split(":");
-                String listKey = key1[1];
-                list.add(new BasicNameValuePair(listKey,value));
-            }
-        }
-        return list;
-    }
+
     //post上传list数据
     public static String Post(String uri,Map<String,String> map){
         CloseableHttpResponse response=null;
