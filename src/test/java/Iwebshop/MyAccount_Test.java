@@ -1,8 +1,8 @@
 package Iwebshop;
 
-import InterfaceFramework.Iwebshop.RequestUtils;
-import Interfaces.Iwebshop.MyAccount.*;
-import Interfaces.Iwebshop.UserLogin;
+import Interfaces.MyAccount.PageSkip;
+import Interfaces.MyAccount.WebIndex;
+import Interfaces.UserLogin;
 import Utils.IteratorUtils;
 import Utils.ReportUtils;
 import org.testng.annotations.DataProvider;

@@ -1,4 +1,4 @@
-package InterfaceFramework.Iwebshop;
+package InterfaceFramework;
 
 import Utils.ReportUtils;
 import org.apache.http.Consts;

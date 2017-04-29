@@ -1,6 +1,6 @@
 package Iwebshop;
 
-import Interfaces.Iwebshop.USER.user;
+import Interfaces.USER.user;
 import Utils.IteratorUtils;
 import Utils.ReportUtils;
 import org.testng.annotations.DataProvider;

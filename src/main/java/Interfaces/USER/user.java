@@ -1,11 +1,7 @@
-package Interfaces.Iwebshop.USER;
+package Interfaces.USER;
 
-import InterfaceFramework.Iwebshop.RequestUtils;
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
+import InterfaceFramework.RequestUtils;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 /**

@@ -1,12 +1,11 @@
-package Interfaces.Iwebshop.MyAccount;
+package Interfaces.MyAccount;
 
-import InterfaceFramework.Iwebshop.RequestUtils;
+import InterfaceFramework.RequestUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by Administrator on 2017-04-22.

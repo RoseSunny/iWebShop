@@ -1,6 +1,6 @@
 package Iwebshop;
 
-import Interfaces.Iwebshop.SystemLogin;
+import Interfaces.SystemLogin;
 import Utils.DataUtils;
 import Utils.IteratorUtils;
 import Utils.ReportUtils;

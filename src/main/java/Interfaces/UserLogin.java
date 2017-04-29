@@ -1,12 +1,11 @@
-package Interfaces.Iwebshop;
+package Interfaces;
 
-import InterfaceFramework.Iwebshop.RequestUtils;
+import InterfaceFramework.RequestUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

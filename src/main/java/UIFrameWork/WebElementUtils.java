@@ -1,5 +1,6 @@
-package InterfaceFramework.Iwebshop.UIFrame;
+package UIFrameWork;
 
+import UIFrameWork.Browser;
 import Utils.ReportUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 /**
  * Created by Administrator on 2017-04-23.
  */
-public class webElementUtils extends Browser{
+public class WebElementUtils extends Browser {
     private static ReportUtils report=new ReportUtils();
     //通过元素的id来定位
     public static WebElement findElement_Id(String id){
@@ -79,7 +80,7 @@ public class webElementUtils extends Browser{
     }
 
     //输入sendKey
-    public void sendKey(WebElement element,String key){
+    public static void sendKey(WebElement element,String key){
         if(element == null || element.equals("")){
             report.error("element为空");
             return;
@@ -94,7 +95,7 @@ public class webElementUtils extends Browser{
     }
 
     //点击按钮
-    public void click(WebElement element){
+    public static void click(WebElement element){
         if(element == null || element.equals("")){
             report.error("element为空");
             return;
@@ -104,7 +105,7 @@ public class webElementUtils extends Browser{
     }
 
     //提交表单
-    public void submit(WebElement element){
+    public static void submit(WebElement element){
         if(element == null || element.equals("")){
             report.error("key为空");
             return;

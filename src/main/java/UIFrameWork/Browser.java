@@ -1,4 +1,4 @@
-package InterfaceFramework.Iwebshop.UIFrame;
+package UIFrameWork;
 
 import config.Selenium;
 import org.openqa.selenium.WebDriver;

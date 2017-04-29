@@ -1,5 +1,6 @@
-package InterfaceFramework.Iwebshop.UIFrame;
+package UIFrameWork;
 
+import UIFrameWork.Browser;
 import Utils.ReportUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +8,7 @@ import org.openqa.selenium.WebElement;
 /**
  * Created by Administrator on 2017-04-23.
  */
-public class BrowserUtils extends Browser{
+public class BrowserUtils extends Browser {
     private static ReportUtils report=new ReportUtils();
 
     //打开浏览器

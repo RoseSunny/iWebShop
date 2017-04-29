@@ -1,8 +1,6 @@
 package Iwebshop;
 
-import Interfaces.Iwebshop.Get_Token;
-import Interfaces.Iwebshop.SystemLogin;
-import Utils.DataUtils;
+import Interfaces.SystemLogin;
 import Utils.IteratorUtils;
 import Utils.ReportUtils;
 import org.testng.annotations.DataProvider;

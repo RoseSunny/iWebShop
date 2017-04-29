@@ -1,5 +1,6 @@
-package Interfaces.Iwebshop;
+package Interfaces;
 
+import InterfaceFramework.RequestUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
@@ -18,7 +19,7 @@ public class Get_Token {
         list.add(new BasicNameValuePair("appid",map.get("参数appid")));
         list.add(new BasicNameValuePair("secret",map.get("参数secret")));
 
-        response= InterfaceFramework.Iwebshop.RequestUtils.Get(map.get("接口地址"),list);
+        response= RequestUtils.Get(map.get("接口地址"),list);
         return response;
     }
 

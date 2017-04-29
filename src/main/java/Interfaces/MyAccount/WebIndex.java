@@ -1,6 +1,6 @@
-package Interfaces.Iwebshop.MyAccount;
+package Interfaces.MyAccount;
 
-import InterfaceFramework.Iwebshop.RequestUtils;
+import InterfaceFramework.RequestUtils;
 
 import java.util.Map;
 

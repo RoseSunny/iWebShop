@@ -1,6 +1,6 @@
-package Interfaces.Iwebshop;
+package Interfaces;
 
-import InterfaceFramework.Iwebshop.RequestUtils;
+import InterfaceFramework.RequestUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 

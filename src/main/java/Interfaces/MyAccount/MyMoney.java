@@ -1,6 +1,6 @@
-package Interfaces.Iwebshop.MyAccount;
+package Interfaces.MyAccount;
 
-import InterfaceFramework.Iwebshop.RequestUtils;
+import InterfaceFramework.RequestUtils;
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
@@ -11,9 +11,10 @@ import java.util.Map;
 /**
  * Created by Administrator on 2017-04-22.
  */
-public class MyVoucher {
-    static public String myVouchar(Map<String,String> map){
-        String response = null;
+public class MyMoney {
+    //我的余额
+    static public String myMoney(Map<String,String> map){
+        String response;
         List<NameValuePair> list=new ArrayList();
         list.add(new BasicNameValuePair("controller",map.get("controller")));
         list.add(new BasicNameValuePair("action",map.get("参数:action")));
