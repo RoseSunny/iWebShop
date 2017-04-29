@@ -31,7 +31,7 @@ public class Add_Address {
         map1.put("mobile",map.get("参数:mobile"));
         map1.put("telphone",map.get("参数:telphone"));
         map1.put("zip",map.get("参数:zip"));
-        response = RequestUtils.Post(url,map1);
+        response = RequestUtils.Post(url,map1,"参数");
         return response;
     }
 }
