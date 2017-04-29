@@ -31,7 +31,7 @@ public class WebElementUtils extends Browser {
             report.error("name为空");
             return null;
         }else {
-            WebElement element = driver.findElement(By.className(Name));
+            WebElement element = driver.findElement(By.name(Name));
             return element;
         }
     }

@@ -18,9 +18,9 @@ public class GoodsManager {
         WebElementUtils.sendKey(name,map.get("用户名"));
         WebElement password=WebElementUtils.findElement_Name(map.get("findElement_Password"));
         WebElementUtils.sendKey(password,map.get("密码"));
+        browserUtils.pause(Integer.getInteger(map.get("等待时间")));
         WebElement captcha=WebElementUtils.findElement_Name(map.get("findElement_Captcha"));
         WebElementUtils.sendKey(captcha,map.get("验证码"));
-        browserUtils.pause(Integer.getInteger(map.get("等待时间")));
         WebElement submit=WebElementUtils.findElement_xPath(map.get("findElement_Submit"));
         WebElementUtils.submit(submit);
 
